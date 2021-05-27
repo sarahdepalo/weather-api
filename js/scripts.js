@@ -15,7 +15,7 @@ const weather = document.querySelector('#weather');
 const weatherButton = document.querySelector('#getWeather');
 
 function updateWeather(data) {
-    const theWeather = `The temperature for ${data.name} is ${data.main.temp}, but it feels like ${data.main.feels_like}.`;
+    const theWeather = `The temperature for ${data.name} is ${data.main.temp}, but it feels like ${data.main.feels_like}. `;
     weather.innerText = theWeather;
 }
 
