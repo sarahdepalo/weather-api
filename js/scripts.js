@@ -2,7 +2,7 @@
 
 
 function fetchWeather() {
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=tampa&appid=c58c3fb30ceedded908944ec0edfb311").then(function(response) {
+    fetch("http://api.openweathermap.org/data/2.5/weather?q=tampa&appid=c58c3fb30ceedded908944ec0edfb311&units=imperial").then(function(response) {
         return response.json();
     }).then(function(data) {
         updateWeather(data);
